@@ -1,0 +1,114 @@
+html * {
+    font-family: Arial;
+    background-color: #a37b73;
+    padding-left: 2%;
+}
+
+.top-of-screen {
+    width: 100%
+}
+
+h1 {
+    color: #3F292B;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+}
+ 
+p {
+    font-size: large;
+}
+
+button {
+    background-color: #D34F73;
+    color: white;
+    text-align: center;
+    border-color: white;
+    width: 50px;
+    height: 25px;
+    border-radius: 20%;
+}
+
+.top {
+    background-color: #a37b73;
+}
+
+.sticky {
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+}
+
+div.scrollOptions {
+    padding-top: 10px;
+    background-color: white;
+    border-radius: 25px;
+    overflow-x:scroll;     
+    white-space: nowrap;
+}
+
+div.scrollOptions>img{
+    background-color: white;
+    border-radius: 25px;
+}
+
+.options{
+    background-color: white;
+    display: inline-block;
+}
+
+.options>img {
+    background-color: white;
+    width: 100%;
+    height: 200px;
+}
+
+.options>p {
+    text-align: center;
+    background-color: white;
+}
+
+div.DrinkScroll {
+    padding-top: 10px;
+    background-color: #DEDEDE;
+    border-radius: 25px;
+    overflow-x:scroll;     
+    white-space: nowrap;
+}
+
+div.DrinkScroll>img {
+    background-color: #DEDEDE;
+    border-radius: 25px;
+}
+
+.card {
+    background-color: #DEDEDE;
+    border-color: #3F292B;
+    border-radius: 25px;
+    display: inline-block;
+}
+
+.card>img {
+    border-radius: 25px;
+    height: 200px;
+    width: 150px;
+}
+
+.label {
+    background-color: #DEDEDE;
+}
+
+.label>button {
+    float: right
+}
+
+.label>p {
+    background-color: #DEDEDE;
+    text-align: left;
+}
+.label>p>b {
+    background-color: #DEDEDE;
+    text-align: left;
+}

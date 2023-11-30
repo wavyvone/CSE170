@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../items.css">
+    </head>
+<body>
+    <div class="top">
+        <h1 class="sticky">
+            Hot Drinks
+        </h1>
+        <hr>
+    </div>
+    <img src="../img/HotDrinks/hotCoffee.jpg">
+    <p><b>Hot Coffee</b> <br> <span id="desc">Blue Mountain Dark Roast</span></p>
+    <hr>
+
+    <h3>Size</h3>
+    <div class="btn-group">
+        <button>S</button>
+        <button>M</button>
+        <button>L</button>
+    </div>
+
+    <h3>Customize</h3>
+    <div class="custom-group">
+        <div class="custom-shots"> 
+            Expresso Shot &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+            <button onclick="document.querySelector('#steve').value=parseInt(document.querySelector('#steve').value)<1?parseInt(document.querySelector('#steve').value):parseInt(document.querySelector('#steve').value)-1">-</button>
+            <input type="number" id="steve" min="0" max="20" value=0>
+            <button onclick="document.querySelector('#steve').value=parseInt(document.querySelector('#steve').value)>19?parseInt(document.querySelector('#steve').value):parseInt(document.querySelector('#steve').value)+1">+</button>
+        </div>
+        <select name="Milk" id="Milk">
+            <option value="Whole">Whole Milk</option>
+            <option value="Almond">Almond Milk</option>
+            <option value="Soy">Soy Milk</option>
+            <option value="Oat">Oat Milk</option>
+            <option value="2%">2% Milk</option>
+        </select>
+        <select name="Cream" id="Cream">
+            <option value="No Cream">No Cream</option>
+            <option value="Normal Cream">Normal Cream</option>
+            <option value="Light Cream">Light Cream</option>
+            <option value="Heavy Cream">Heavy Cream</option>
+            <option value="Extra Cream">Extra Cream</option>
+        </select>
+        <select name="Chocolate" id="Chocolate">
+            <option value="No Chocolate">No Chocolate</option>
+            <option value="Normal Chocolate">Normal Chocolate</option>
+            <option value="Light Chocolate">Light Chocolate</option>
+            <option value="Heavy Chocolate">Heavy Chocolate</option>
+            <option value="Extra Chocolate">Extra Chocolate</option>
+        </select>
+    </div>
+
+    <button class="addToBag">
+        <p>
+            Add To Bag
+            <span>
+                $4.90
+            </span>
+        </p>
+    </button> 
+
+
+
+</body>
+</html>

@@ -1,11 +1,15 @@
 html * {
     font-family: Arial;
-    background-color: #a37b73;
-    padding-left: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 .top-of-screen {
     width: 100%
+}
+
+body {
+    background-color: #a37b73;
 }
 
 h1 {
@@ -27,12 +31,13 @@ button {
     text-align: center;
     border-color: white;
     width: 50px;
-    height: 25px;
+    height: 30px;
     border-radius: 20%;
 }
 
 .top {
     background-color: #a37b73;
+    top:0;
 }
 
 .sticky {
@@ -90,7 +95,7 @@ div.DrinkScroll>img {
     display: inline-block;
 }
 
-.card>img {
+.card>a>img {
     border-radius: 25px;
     height: 200px;
     width: 150px;
@@ -101,6 +106,7 @@ div.DrinkScroll>img {
 }
 
 .label>button {
+    margin-bottom: 5px;
     float: right
 }
 
@@ -119,11 +125,13 @@ div.DrinkScroll>img {
 
 .navbar {
     left:0;
-    background-color: #DBBEA1;
+    background-color: #fff;
     position: fixed;
     bottom:0;
     width: 100%;
     overflow: auto;
+    border-top-right-radius: 2%;
+    border-top-left-radius:  2%;
   }
 
   /* Style the links inside the navigation bar */
@@ -133,14 +141,13 @@ div.DrinkScroll>img {
     text-align: center;
     padding: 12px 0;
     transition: all 0.3s ease;
-    color: white;
+    color: #a37b73;
     font-size: 36px;
   }
   
   /* Change the color of links on hover */
   .navbar a:hover {
     color: #D34F73;
-    background-color: #DBBEA1;
   }
   
   /* Add a green background color to the active link */
@@ -152,3 +159,41 @@ div.DrinkScroll>img {
   .navbar .icon {
     display: none;
   }
+
+.fa[datacount]{
+    position:relative;
+}
+
+.fa[datacount]:after{
+    position: absolute;
+    right: -0.75em;
+    top: -.75em;
+    content: attr(datacount);
+    padding: .5em;
+    border-radius: 10em;
+    line-height: .9em;
+    color: white;
+    background: #D34F73F0;
+    text-align: center;
+    min-width: 2em;
+    font: bold .4em sans-serif;
+}
+
+
+.container {
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Center items vertically within the container */
+}
+
+.container p {
+    margin-right: 16px; 
+    margin-bottom: 0; /* Reset margin to zero */
+    margin-top: 2px;
+    padding-bottom: 5px; /* Reset padding to zero */
+}
+
+.heart{
+    padding-top: 8px;
+    width: 30px;
+    height: 30px;
+}
